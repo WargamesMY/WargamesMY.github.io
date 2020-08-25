@@ -14,36 +14,58 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="vendor/polygonizr/polygonizr.min.js"></script>
+	
     <style type="text/css">
 
         @font-face {
             font-family: DOS;
             src: url('vendor/Fixedsys500c.otf');
-        } 
+			color: white;
+        }
+        
+        html,
+        body {
+            height: 100;
+            width: 100;
+            margin: 0;
+        }
+
+        #site-landing {
+            position: relative;
+            height: 100;
+            width: 100;
+            background-color: rgb(30, 30, 30);
+        }
 
         .dos-font {
             font-family: DOS;
+			color: white;
         }
     
         .dos-font-title {
             font-family: DOS;
             text-transform: uppercase;
+			color: white;
         }
 
         .start-end-date {
             font-family: DOS;
             font-size: 2em;
+			color: white;
         }
 
         .section-title {
             font-family: DOS;
             font-size: 3em;
+			color: white;
         }
 
         .social-media-icons {
             font-size: 2em;
-            color: black;
+            color: white;
         }
 
         .section-title a {
@@ -61,7 +83,26 @@
 
 </head>
 <body>
+	<div id="site-landing">
+    
+    <script>
+    
+        let $sitelading = $('#site-landing');
+        $sitelading.polygonizr();
+        
+        // Update size.
+        $(window).resize(function () {
+            $sitelading.polygonizr("stop");
+            $sitelading.polygonizr({
+                canvasHeight: $(this).height(),
+                canvasWidth: $(this).width()
+            });
 
+            $sitelading.polygonizr("refresh");
+        });
+    
+    </script>
+    
     <div class="container">
         <div class="py-5 text-center">
             <img class="d-block mx-auto mb-4" src="img/wgmy.png" alt="" width="150" height="150">
@@ -86,7 +127,7 @@
 
             The objective of the game is to provide a platform for Malaysia's IT security enthusiast to test their skills and knowledge, or maybe just to play for fun and network. Open to all Malaysians - students, academics, professionals, hobbyist or anyone.<br><br>
             
-            The format is based on Jeopardy, with a twist. There is a minimum of 10 challenges related to IT Security that needs to be solved. The challenges cover various area including web application, network forensics, encryption, and others.<br><br>
+            The format is based on Jeopardy, with a twist. There is a minimum of 10 challenges related to IT Security that needs to be solved. The challenges cover various areas including web application, network forensics, encryption, and others.<br><br>
             
             Wargames.my welcomes any contribution to the prize-pot or if you have other specific stuff to contribute, do drop us an email. We are more than happy to talk to you.
             
@@ -103,17 +144,17 @@
                 We try hard to keep the competition as free and exciting as possible; however, we do require players to adhere to a few simple rules:
             </p>
             <ol>
-                <li>Maximum of <strong>three(3)</strong> people per team.</li>
+                <li>Maximum of <strong style= "color:orange">THREE(3)</strong> people per team.</li>
                 <li>No off-the-shelf automated scanning tools such as Nessus, OpenVAS, etc. It's useless and we'll kick you out for that lame ass shit.</li>
                 <li>No cooperation between players with independent accounts. Sharing of flags or providing revealing hints to other players is cheating, don't do it.</li>
                 <li>No attacking the competition infrastructure. If bugs or vulns are found, please alert the competition organizers immediately</li>
-                <li>Absolutely no sabotaging of other competing players, or in any way hindering their independent progress.</li>
+                <li><strong style= "color:orange">Absolutely NO sabotaging</strong> of other competing players, or in any way hindering their independent progress.</li>
                 <li>No brute forcing of challenge flag / keys against the scoring server </li>
                 <li>No flooding and / or DoS attacks. Teams caught in the act will be penalized by a time penalty or a disqualification.</li>
                 <li>No ARP spoofing. Teams caught in the act will be penalized by a time penalty or a disqualification.</li>
                 <li>The rules and regulations will or might be updated without prior notice.</li>
                 <li>At all times, the decision of the WGMY Crew is final on any matter in question.</li>
-                <li>WGMY CTF is open to all ages</li>
+                <li>WGMY CTF is open to all ages. University and high schools student is highly encourage to join.</li>
             </ol>
         </div>
     </div>
@@ -126,8 +167,6 @@
         <small>
             <h3 class="dos-font text-center w-50 mx-auto pt-3">
                 <a href="#contact-us">Contact us</a> for sponsorship! 
-                
-                <!-- beware of different sponsor poster sizes, dont resize -->
             </h3>
         </small>
     </div>
@@ -195,7 +234,7 @@
 
             <small>
                 <h4 class="dos-font text-center w-50 mx-auto pt-3">
-                    Email to us at &#111;&#118;&#101;&#114;&#108;&#111;&#114;&#100;&#64;&#119;&#97;&#114;&#103;&#97;&#109;&#101;&#115;&#46;&#109;&#121;
+                    Email to us at <p style= "color:cyan">&#111;&#118;&#101;&#114;&#108;&#111;&#114;&#100;&#64;&#119;&#97;&#114;&#103;&#97;&#109;&#101;&#115;&#46;&#109;&#121;</p>
                 </h4>
             </small>
             
@@ -207,5 +246,6 @@
         </div>
     </div>
 
+</div>
 </body>
 </html>
