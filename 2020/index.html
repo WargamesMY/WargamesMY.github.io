@@ -6,7 +6,7 @@
     <meta name="description" content="">
 
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    
+
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
@@ -14,18 +14,18 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="vendor/polygonizr/polygonizr.min.js"></script>
-	
+
     <style type="text/css">
 
         @font-face {
             font-family: DOS;
             src: url('vendor/Fixedsys500c.otf');
-			color: white;
+            color: white;
         }
-        
+
         html,
         body {
             height: 100%;
@@ -35,33 +35,36 @@
         }
 
         #site-landing {
-            position: relative;
-            height: 100;
-            width: 100;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
             background-color: rgb(30, 30, 30);
+            z-index: -1;
         }
 
         .dos-font {
             font-family: DOS;
-			color: white;
+            color: white;
         }
-    
+
         .dos-font-title {
             font-family: DOS;
             text-transform: uppercase;
-			color: white;
+            color: white;
         }
 
         .start-end-date {
             font-family: DOS;
             font-size: 2em;
-			color: white;
+            color: white;
         }
 
         .section-title {
             font-family: DOS;
             font-size: 3em;
-			color: white;
+            color: white;
         }
 
         .social-media-icons {
@@ -73,24 +76,17 @@
             color: #2d96bd;
         }
 
-        .carousel-control-next,
-        .carousel-control-prev,
-        .carousel-indicators {
-            filter: invert(100%);
-        }
-        
-    
     </style>
 
 </head>
 <body>
-	<div id="site-landing">
-    
+    <div id="site-landing"></div>
+
     <script>
-    
+
         let $sitelading = $('#site-landing');
         $sitelading.polygonizr();
-        
+
         // Update size.
         $(window).resize(function () {
             $sitelading.polygonizr("stop");
@@ -101,9 +97,9 @@
 
             $sitelading.polygonizr("refresh");
         });
-    
+
     </script>
-    
+
     <div class="container">
         <div class="py-5 text-center">
             <img class="d-block mx-auto mb-4" src="img/wgmy.png" alt="" width="150" height="150">
@@ -127,11 +123,11 @@
             Wargames.my is a 24-hours online CTF hacking game. Well, it is a competition of shorts.<br><br>
 
             The objective of the game is to provide a platform for Malaysia's IT security enthusiast to test their skills and knowledge, or maybe just to play for fun and network. Open to all Malaysians - students, academics, professionals, hobbyist or anyone.<br><br>
-            
+
             The format is based on Jeopardy, with a twist. There is a minimum of 10 challenges related to IT Security that needs to be solved. The challenges cover various areas including web application, network forensics, encryption, and others.<br><br>
-            
+
             Wargames.my welcomes any contribution to the prize-pot or if you have other specific stuff to contribute, do drop us an email. We are more than happy to talk to you.
-            
+
         </p>
     </div>
 
@@ -167,7 +163,7 @@
         </div>
         <small>
             <h3 class="dos-font text-center w-50 mx-auto pt-3">
-                <a href="#contact-us">Contact us</a> for sponsorship! 
+                <a href="#contact-us">Contact us</a> for sponsorship!
             </h3>
         </small>
     </div>
@@ -189,7 +185,7 @@
               <li data-target="#demo" data-slide-to="5"></li>
               <li data-target="#demo" data-slide-to="6"></li>
             </ul>
-          
+
             <!-- The slideshow -->
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -214,7 +210,7 @@
                 <img src="img/wgmy2019.png" alt="2019">
               </div>
             </div>
-          
+
             <!-- Left and right controls -->
             <a class="carousel-control-prev" href="#demo" data-slide="prev">
               <span class="carousel-control-prev-icon"></span>
@@ -222,7 +218,7 @@
             <a class="carousel-control-next" href="#demo" data-slide="next">
               <span class="carousel-control-next-icon"></span>
             </a>
-          
+
         </div>
     </div>
 
@@ -231,14 +227,14 @@
             <a href="#contact-us">#</a>
             Contact Us ✉️
         </div>
-        <div class="dos-font text-center w-50 mx-auto pt-3">
+        <div class="dos-font text-center mx-auto pt-3">
 
             <small>
-                <h4 class="dos-font text-center w-50 mx-auto pt-3">
+                <h4 class="dos-font text-center mx-auto pt-3">
                     Email to us at <p style= "color:cyan">&#111;&#118;&#101;&#114;&#108;&#111;&#114;&#100;&#64;&#119;&#97;&#114;&#103;&#97;&#109;&#101;&#115;&#46;&#109;&#121;</p>
                 </h4>
             </small>
-            
+
             <div class="social-media-icons pt-5">
                 <a href="http://wargames.my/fb" target="_blank"><i class="fab fa-facebook"></i></a>
                 <a href="http://wargames.my/twitter" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -247,6 +243,5 @@
         </div>
     </div>
 
-</div>
 </body>
 </html>
