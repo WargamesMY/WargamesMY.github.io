@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="vendor/polygonizr/polygonizr.min.js"></script>
+
+    <style type="text/css">
+
+        @font-face {
+            font-family: DOS;
+            src: url('vendor/Fixedsys500c.otf');
+            color: white;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        #site-landing {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgb(30, 30, 30);
+            z-index: -1;
+        }
+
+        .dos-font {
+            font-family: DOS;
+            color: white;
+        }
+
+        .dos-font-title {
+            font-family: DOS;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        .start-end-date {
+            font-family: DOS;
+            font-size: 2em;
+            color: white;
+        }
+
+        .section-title {
+            font-family: DOS;
+            font-size: 3em;
+            color: white;
+        }
+
+        .social-media-icons {
+            font-size: 2em;
+            color: white;
+        }
+
+        .section-title a {
+            color: #2d96bd;
+        }
+
+        .carousel-indicators {
+            filter: invert(100%);
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="site-landing"></div>
+
+    <script>
+
+        let $sitelading = $('#site-landing');
+        $sitelading.polygonizr();
+
+        // Update size.
+        $(window).resize(function () {
+            $sitelading.polygonizr("stop");
+            $sitelading.polygonizr({
+                canvasHeight: $(this).height(),
+                canvasWidth: $(this).width()
+            });
+
+            $sitelading.polygonizr("refresh");
+        });
+
+    </script>
+
+    <div class="container">
+        <div class="py-5 text-center">
+            <img class="d-block mx-auto mb-4" src="img/wgmy.png" alt="" width="150" height="150">
+            <h1 class="dos-font-title display-4 pt-5">Capture The Flag (CTF)</h1>
+            <h1 class="dos-font-title display-5 pt-3">Wargames.my 2020</h1>
+            <br>
+            <div class="start-end-date">
+                Start: 05 December 2020 00:00 GMT+8
+            </div>
+            <div class="start-end-date">
+                End: 06 December 2020 00:00 GMT+8
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <div id="about" class="container text-center">
+        <div class="section-title pt-5">
+            <a href="#about">Registered Team</a>
+            Registered Team
+        </div>
+        <p class="dos-font">
+            <table class="table table-bordered" id="regteam">
+                <thead>
+                    <th>Team Name</th>
+                    <th>Category</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+    </div>
+
+    <div id="sponsors" class="container text-center">
+        <div class="section-title pt-5">
+            <a href="#sponsors">#</a>
+            Sponsors
+        </div>
+
+        <div class="row pt-5 justify-content-md-center">
+            <div class="col-md-3">
+                <div class="portfolio-item mx-auto text-center ">
+                    <a href="https://www.ask-pentest.com/" target="_blank">
+                        <img src="img/ask.png" class="img-fluid" alt="ASK Pentest" style="max-width: 100%;">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item mx-auto text-center ">
+                    <a href="https://syntx.com.my/" target="_blank">
+                        <img src="img/syntx.png" class="img-fluid" alt="syntx" style="max-width: 100%;"  width="120">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-5 justify-content-md-center">
+            <div class="col-md-3">
+                <div class="portfolio-item mx-auto text-center ">
+                    <a href="https://smartcaliph.co/" target="_blank">
+                        <img src="img/smartcaliph.png" class="img-fluid" alt="SmartCaliph" style="max-width: 100%;" width="110">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="portfolio-item mx-auto text-center ">
+                    <a href="https://exploitable.host/" target="_blank">
+                        <img src="img/exploitablehost_w.png" class="img-fluid" alt="exploitable.host" style="max-width: 100%;">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <small>
+            <h3 class="dos-font text-center w-50 mx-auto pt-5">
+                <a href="#contact-us">Contact us</a> for sponsorship!
+            </h3>
+        </small>
+    </div>
+
+    <div id="contact-us" class="container text-center">
+        <div class="section-title pt-5">
+            <a href="#contact-us">#</a>
+            Contact Us
+        </div>
+        <div class="dos-font text-center mx-auto pt-3">
+
+            <small>
+                <h4 class="dos-font text-center mx-auto pt-3">
+                    Email to us at <p style= "color:cyan">&#111;&#118;&#101;&#114;&#108;&#111;&#114;&#100;&#64;&#119;&#97;&#114;&#103;&#97;&#109;&#101;&#115;&#46;&#109;&#121;</p>
+                </h4>
+            </small>
+
+            <div class="social-media-icons pt-5">
+                <a href="https://www.facebook.com/wargames.my2015/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/wargamesmy" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/WargamesMY" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function() {
+            $.get('./teams.json', function(r) {
+                for(d in r) {
+                    $('#regteam > tbody').append("<tr><td>" + d.team_name + "</td><td>" + d.category + "</td></tr>");
+                }
+            }, 'json');
+        });
+    </script>
+</body>
+</html>
