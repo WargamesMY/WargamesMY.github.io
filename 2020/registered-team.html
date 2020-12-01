@@ -142,7 +142,7 @@
         <div class="section-title pt-5">
             <a href="#dq">#</a>
             Disqualified Team
-            <em>Reason: Unable to read rules properly</em>
+            <p><small>Reason: Unable to read rules properly</small></p>
         </div>
         <p class="dos-font">
             <table class="dos-font table table-bordered col-md-6  w-50 mx-auto pt-3" id="dqteam">
@@ -230,7 +230,7 @@
             }, 'json');
             $.get('./losers.json', function(r) {
                 for(d in r) {
-                    $('#dqteam > tbody').append("<tr><td>" + d + "</td></tr>");
+                    $('#dqteam > tbody').append("<tr><td>" + r[d] + "</td></tr>");
                 }
             }, 'json');
         });
