@@ -107,7 +107,7 @@
 
     <div class="container">
         <div class="py-5 text-center">
-            <img class="d-block mx-auto mb-4" src="img/wgmy.png" alt="" width="150" height="150">
+            <img class="d-block mx-auto mb-4" src="img/wgmy.png" alt="" width="150" height="150" onclick="document.location='/';">
             <h1 class="dos-font-title display-4 pt-5">Capture The Flag (CTF)</h1>
             <h1 class="dos-font-title display-5 pt-3">Wargames.my 2020</h1>
             <br>
@@ -131,6 +131,23 @@
                 <thead>
                     <th>Team Name</th>
                     <th>Category</th>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </p>
+    </div>
+
+    <div id="dq" class="container text-center">
+        <div class="section-title pt-5">
+            <a href="#dq">#</a>
+            Disqualified Team
+            <em>Reason: Unable to read rules properly</em>
+        </div>
+        <p class="dos-font">
+            <table class="dos-font table table-bordered col-md-6  w-50 mx-auto pt-3" id="dqteam">
+                <thead>
+                    <th>Team Name</th>
                 </thead>
                 <tbody>
                 </tbody>
@@ -209,6 +226,11 @@
             $.get('./teams.json', function(r) {
                 for(d in r) {
                     $('#regteam > tbody').append("<tr><td>" + r[d].team_name + "</td><td>" + r[d].category + "</td></tr>");
+                }
+            }, 'json');
+            $.get('./losers.json', function(r) {
+                for(d in r) {
+                    $('#dqteam > tbody').append("<tr><td>" + d + "</td></tr>");
                 }
             }, 'json');
         });
