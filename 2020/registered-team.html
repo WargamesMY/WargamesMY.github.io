@@ -138,11 +138,11 @@
         </p>
     </div>
 
-    <div id="dq" class="container text-center">
+    <!--<div id="dq" class="container text-center">
         <div class="section-title pt-5">
             <a href="#dq">#</a>
             Disqualified Team
-            <p><small>Reason: Unable to read rules properly</small></p>
+            <p><small>Reason: Does not satisfy rules requirement. <em>Contact us if you want to appeal.</em></small></p>
         </div>
         <p class="dos-font">
             <table class="dos-font table table-bordered col-md-6  w-50 mx-auto pt-3" id="dqteam">
@@ -153,7 +153,7 @@
                 </tbody>
             </table>
         </p>
-    </div>
+    </div>-->
 
     <div id="sponsors" class="container text-center">
         <div class="section-title pt-5">
@@ -228,11 +228,11 @@
                     $('#regteam > tbody').append("<tr><td>" + r[d].team_name + "</td><td>" + r[d].category + "</td></tr>");
                 }
             }, 'json');
-            $.get('./losers.json', function(r) {
+            /*$.get('./losers.json', function(r) {
                 for(d in r) {
                     $('#dqteam > tbody').append("<tr><td>" + r[d] + "</td></tr>");
                 }
-            }, 'json');
+            }, 'json');*/
         });
     </script>
 </body>
