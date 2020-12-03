@@ -128,6 +128,10 @@
     "category": "Professional"
   },
   {
+    "team_name": "janjimanis",
+    "category": "Professional"
+  },
+  {
     "team_name": "UnknownHats",
     "category": "Student"
   },
@@ -389,6 +393,22 @@
   },
   {
     "team_name": "MonkOnMars",
+    "category": "Student"
+  },
+  {
+    "team_name": "Brinjal",
+    "category": "Student"
+  },
+  {
+    "team_name": "Rainb0w_Unic0rn",
+    "category": "Student"
+  },
+  {
+    "team_name": "10g!c",
+    "category": "Student"
+  },
+  {
+    "team_name": "Syth",
     "category": "Student"
   }
 ]
