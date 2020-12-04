@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
     <!-- CSS only -->
@@ -223,7 +225,8 @@
     </div>
     <script type="text/javascript">
         $(function() {
-            $.get('./teams.json', function(r) {
+            var t = Math.floor(Date.now() / 1000);
+            $.get('./teams.json?noCache=' + t, function(r) {
                 for(d in r) {
                     $('#regteam > tbody').append("<tr><td>" + r[d].team_name + "</td><td>" + r[d].category + "</td></tr>");
                 }
