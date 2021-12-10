@@ -502,5 +502,9 @@
     {
         "category": "Student Category",
         "team_name": "SNORLAX"
+    },
+    {
+        "category": "Open Category",
+        "team_name": "blakang"
     }
 ]
