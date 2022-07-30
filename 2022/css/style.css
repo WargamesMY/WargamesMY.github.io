@@ -309,3 +309,24 @@ section {
     font-weight: 700;
     padding-right: 1ch;
 }
+
+/* Small screen (smaller font and container padding) */
+
+@media only screen and (max-width: 768px) {
+    h4 {
+        font-size: 0.9em;
+    }
+
+    p,
+    li {
+        font-size: 0.8em;
+    }
+
+    #fp-nav.fp-right {
+        right: 6px;
+    }
+
+    .section {
+        padding: 50px 40px;
+    }
+}
