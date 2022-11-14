@@ -36,11 +36,15 @@ a:active {
     padding: 50px;
 }
 
-.section.first h1,
-.section.first h2,
-.section.first h3,
-.section.first h4 {
+.section:first-child h1,
+.section:first-child h2,
+.section:first-child h3,
+.section:first-child h4 {
     margin: 15px 0;
+}
+
+.section:last-child p:last-child {
+    margin-top: 30px;
 }
 
 .section.center,
@@ -258,7 +262,7 @@ a.register.fixed {
     right: 10px;
 }
 
-a.register.center {
+.section a.register {
     animation: color-changing 1s infinite alternate;
 }
 
