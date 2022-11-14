@@ -43,10 +43,6 @@ a:active {
     margin: 15px 0;
 }
 
-.section:last-child p:last-child {
-    margin-top: 30px;
-}
-
 .section.center,
 .section h3 {
     text-align: center;
@@ -208,6 +204,10 @@ a:active {
     bottom: 11px;
 }
 
+.sep {
+    color: #888;
+}
+
 /* Logo */
 
 .logo {
@@ -215,7 +215,7 @@ a:active {
     position: fixed;
     top: 10px;
     left: 10px;
-    transition: transform 0.1s;
+    transition: transform 0.2s;
 }
 
 .logo:hover {
@@ -238,9 +238,9 @@ a:active {
     filter: drop-shadow(0 0 9px rgba(255, 255, 255, 0.7));
 }
 
-/* Register buttons */
+/* Buttons */
 
-a.register {
+a.btn {
     display: inline-block;
     font-weight: 700;
     letter-spacing: 2px;
@@ -248,41 +248,41 @@ a.register {
     text-transform: uppercase;
     text-shadow: -1px 1px #4f2376;
     background: linear-gradient(60deg, #000, #666);
-    background-size: 450px 100%;
-    padding: 5px 10px;
+    background-size: 600px 100%;
+    padding: 5px 15px;
     border: 3px solid #632c94;
     box-shadow: -1px 1px #632c94, -2px 2px #632c94, -3px 3px #632c94, -4px 4px #632c94, -5px 5px #632c94;
-    transition: transform 0.1s, background-position 0.1s, box-shadow 0.1s, border-color 0.1s;
+    transition: transform 0.2s, background-position 0.2s, box-shadow 0.2s, border-color 0.2s;
 }
 
-a.register.fixed {
+a.btn.fixed {
     z-index: 999;
     position: fixed;
     top: 10px;
     right: 10px;
 }
 
-.section a.register {
+a.btn.animate {
     animation: color-changing 1s infinite alternate;
 }
 
-a.register:hover {
+a.btn:hover {
     transform: translate(-1px, 1px);
-    background-position: -150px 0;
+    background-position: -200px 0;
     box-shadow: -1px 1px #7c37b9, -2px 2px #7c37b9, -3px 3px #7c37b9, -4px 4px #7c37b9;
     border-color: #7c37b9;
     animation: none;
 }
 
-a.register:active {
+a.btn:active {
     transform: translate(-5px, 5px);
-    background-position: -300px 0;
+    background-position: -400px 0;
     box-shadow: none;
     border-color: #7c37b9;
     animation: none;
 }
 
-a.register.disabled {
+a.btn.disabled {
     pointer-events: none;
     cursor: default;
 }
