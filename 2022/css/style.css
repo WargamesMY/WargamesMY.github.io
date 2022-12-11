@@ -102,8 +102,8 @@ a:active {
 
 .section .sponsors div,
 .section .sponsors img {
-    height: 150px;
-    width: auto;
+    max-width: 240px;
+    max-height: 180px;
 }
 
 .section .slide img {
