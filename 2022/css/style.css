@@ -285,6 +285,7 @@ a.btn:active {
 a.btn.disabled {
     pointer-events: none;
     cursor: default;
+    opacity: 0.8;
 }
 
 @keyframes color-changing {
