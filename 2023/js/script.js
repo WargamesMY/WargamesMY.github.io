@@ -87,10 +87,9 @@ document.addEventListener('resize', () => {
 // main swiper
 
 const check = (swiper) => {
-  console.log('check')
   const slide = swiper.el.querySelectorAll('.swiper-slide')[swiper.realIndex];
 
-  if (slide.scrollHeight === slide.clientHeight) {
+  if (Math.abs(slide.scrollHeight - slide.clientHeight) <= 15) {
     return;
   }
 
