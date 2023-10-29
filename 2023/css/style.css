@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;700&display=swap');
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: 'Noto Sans Mono', monospace;
+  background: #111;
+  color: #fff;
+  text-shadow: 0 0 1px #000, 0 0 3px #fff;
+  margin: 0;
+  padding: 0;
+  height: calc(100% - 10px);
+  overscroll-behavior: none;
+}
+
+.swiper {
+  margin: 10px;
+  width: calc(100% - 20px);
+  height: calc(100% - 10px);
+  border-radius: 8px;
+  box-shadow: 0 0 0 0 #fff;
+  transition: box-shadow 0.15s ease-out;
+}
+
+.swiper.flash {
+  box-shadow: 0 0 10px 3px #fff;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+}
+
+.swiper-slide > div {
+  max-width: 1320px;
+  padding: 10px;
+  padding-top: 0;
+  margin: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.title {
+  text-shadow: -1px 1px 0 #1e7898,
+    -2px 2px 0 #1e7898,
+    -3px 3px 0 #1e7898,
+
+    1px -1px 0 #632c94,
+    0px -1px 0 #632c94,
+    -1px -1px 0 #632c94,
+    -2px 0px 0 #632c94,
+    -3px 1px 0 #632c94,
+    -4px 2px 0 #632c94,
+    -4px 3px 0 #632c94,
+    -4px 4px 0 #632c94,
+
+    1px -1px 0 #632c94,
+    1px 0px 0 #632c94,
+    1px 1px 0 #632c94,
+    0px 2px 0 #632c94,
+    -1px 3px 0 #632c94,
+    -2px 4px 0 #632c94,
+    -3px 4px 0 #632c94,
+    -4px 4px 0 #632c94,
+
+    -1px 1px 3px #fff,
+    -2px 2px 3px #fff,
+    -3px 3px 3px #fff;
+}
+
+h2.title::before {
+  content: '';
+  background-image: url('../img/wgmy.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  display: inline-block;
+  width: 26px;
+  height: 24px;
+  margin: 0 10px -5px 0;
+}
+
+p {
+  margin-top: 1.5rem;
+}
+
+a {
+  font-weight: 700;
+  color: #2596be;
+  text-decoration-color: #4f2376;
+  text-decoration-thickness: 2px;
+  text-shadow: 0 0 1px #000, 0 0 3px #2596be;
+  transition: color 0.3s, text-decoration-color 0.3s, text-decoration-thickness 0.3s;
+}
+
+a:hover {
+  color: #42b2da;
+  text-decoration-color: #632c94;
+  text-decoration-thickness: 3px;
+  text-shadow: 0 0 1px #000, 0 0 3px #42b2da;
+}
+
+a:active {
+  color: #7dcae6;
+  text-decoration-color: #7c37b9;
+  text-decoration-thickness: 2px;
+  text-shadow: 0 0 1px #000, 0 0 3px #7dcae6;
+}
+
+a.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  border: 3px solid #4f2376;
+  box-shadow: 0 0 1px #000, 0 0 3px #2596be;
+  transition: color 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+a.btn:hover {
+  border: 3px solid #632c94;
+  box-shadow: 0 0 1px #000, 0 0 3px #42b2da;
+}
+
+a.btn:active {
+  border: 3px solid #7c37b9;
+  box-shadow: 0 0 1px #000, 0 0 3px #7dcae6;
+}
+
+ul {
+  padding-inline-start: 3ch;
+}
+
+li {
+  padding-bottom: 3px;
+}
+
+.sponsors {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.sponsors div,
+.sponsors a,
+.sponsors img {
+  max-width: 200px;
+  max-height: 150px;
+  display: block;
+  transition: none;
+}
+
+.swiper-slide[data-hash="history"] > div {
+  max-width: calc(100vw - 20px);
+  padding: 0;
+}
+
+.swiper2 {
+  overflow: hidden;
+  margin-top: 1.5rem;
+}
+
+.swiper2 .swiper-slide > div {
+  padding: 0;
+}
+
+.swiper-zoom-container {
+  object-fit: contain;
+}
+
+.swiper-zoom-container + p {
+  margin: 0.5rem;
+}
+
+:root {
+  --swiper-navigation-color: #2596be;
+  --swiper-pagination-color: #2596be;
+  --swiper-pagination-bullet-inactive-color: #fff;
+  --swiper-pagination-progressbar-size: 1px;
+}
+
+.sep {
+  color: #888;
+  text-shadow: 0 0 1px #000, 0 0 3px #888;
+}
+
+.swiper-pagination {
+  z-index: 1;
+}
+
+.crt::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: repeating-linear-gradient(rgba(0, 0, 0, 0) 0px 1px, rgba(0, 0, 0, 0.2) 1px 2px), repeating-linear-gradient(90deg, rgba(255, 0, 0, 0.06) 0px 1px, rgba(0, 255, 0, 0.02) 1px 2px, rgba(0, 0, 255, 0.06) 2px 3px);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.crt::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  bottom: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0) 0, rgba(255, 255, 255, 0.05) 90%, rgba(0, 0, 0, 0) 100%);
+  z-index: 1;
+  pointer-events: none;
+  animation: refresh 10s linear infinite;
+}
+
+@keyframes refresh {
+  0% {
+    bottom: 100%;
+  }
+  70% {
+    bottom: 100%;
+  }
+  100% {
+    bottom: -100px;
+  }
+}
+
+#canvas {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  p,
+  li {
+    font-size: 0.85em;
+  }
+}
