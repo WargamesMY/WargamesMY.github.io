@@ -93,24 +93,18 @@ p {
 
 a {
   font-weight: 700;
-  color: #2596be;
-  text-decoration-color: #4f2376;
+  color: #42b2da;
+  text-decoration-color: #632c94;
   text-decoration-thickness: 2px;
-  text-shadow: 0 0 1px #000, 0 0 3px #2596be;
+  text-shadow: 0 0 1px #000, 0 0 3px #42b2da;
   transition: color 0.3s, text-decoration-color 0.3s, text-decoration-thickness 0.3s;
 }
 
-a:hover {
-  color: #42b2da;
-  text-decoration-color: #632c94;
-  text-decoration-thickness: 3px;
-  text-shadow: 0 0 1px #000, 0 0 3px #42b2da;
-}
-
+a:hover,
 a:active {
   color: #7dcae6;
   text-decoration-color: #7c37b9;
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 3px;
   text-shadow: 0 0 1px #000, 0 0 3px #7dcae6;
 }
 
@@ -118,19 +112,21 @@ a.btn {
   display: inline-block;
   padding: 10px 15px;
   text-decoration: none;
-  border: 3px solid #4f2376;
-  box-shadow: 0 0 1px #000, 0 0 3px #2596be;
+  border: 3px solid #632c94;
+  box-shadow: 0 0 1px #000, 0 0 3px #42b2da;
   transition: color 0.3s, box-shadow 0.3s, border-color 0.3s;
 }
 
-a.btn:hover {
-  border: 3px solid #632c94;
-  box-shadow: 0 0 1px #000, 0 0 3px #42b2da;
-}
-
+a.btn:hover,
 a.btn:active {
   border: 3px solid #7c37b9;
-  box-shadow: 0 0 1px #000, 0 0 3px #7dcae6;
+  box-shadow: 0 0 1px #000, 0 0 3px #7c37b9;
+}
+
+a.btn.disabled {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.9;
 }
 
 ul {
@@ -249,5 +245,37 @@ li {
   p,
   li {
     font-size: 0.85em;
+  }
+}
+
+.scroll {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.scroll p {
+  color: #1e7898;
+  font-size: 0.85em;
+  text-shadow: none;
+  margin: 0;
+}
+
+.scroll svg {
+  stroke: #1e7898;
+  stroke-linecap: round;
+  animation: 0.5s ease-out infinite alternate scroll;
+  height: 25px;
+  width: 25px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20%);
   }
 }
