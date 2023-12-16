@@ -88,7 +88,7 @@ h2.title::before {
 }
 
 p {
-  margin-top: 1.5rem;
+  margin-top: 1.5em;
 }
 
 a {
@@ -140,9 +140,10 @@ li {
 .sponsors {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 1.5rem;
-  margin-top: 1.5rem;
+  gap: 2em;
+  margin-top: 1.5em;
 }
 
 .sponsors div,
@@ -154,6 +155,10 @@ li {
   transition: none;
 }
 
+.sponsors img {
+  filter: drop-shadow(0 0 3px #fff) drop-shadow(0 0 2px #fff) drop-shadow(0 0 1px #fff);
+}
+
 .swiper-slide[data-hash="history"] > div {
   max-width: calc(100vw - 20px);
   padding: 0;
@@ -161,7 +166,7 @@ li {
 
 .swiper2 {
   overflow: hidden;
-  margin-top: 1.5rem;
+  margin-top: 1.5em;
 }
 
 .swiper2 .swiper-slide > div {
@@ -173,7 +178,7 @@ li {
 }
 
 .swiper-zoom-container + p {
-  margin: 0.5rem;
+  margin: 0.5em;
 }
 
 :root {
