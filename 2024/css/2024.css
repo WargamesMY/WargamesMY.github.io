@@ -122,10 +122,6 @@ body {
     font-weight: 600;
     margin-top: 1rem;
     transition: all 0.2s ease;
-    position: absolute;
-    right: 5rem;
-    bottom: 3rem;
-    /* top: 0; */
 }
 
 .register-btn:hover {
