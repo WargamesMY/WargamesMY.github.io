@@ -119,7 +119,7 @@ body {
 .register-btn:hover {
     background: #413277;
     color: #E4C9FF;
-    transform: translateY(-2px);
+    transform: translate(-2px, -2px);
     box-shadow: 3px 3px 6px #E4C9FF;
 }
 
