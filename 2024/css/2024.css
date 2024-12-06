@@ -102,6 +102,7 @@ body {
     font-family: 'Ubuntu Mono', monospace;
     opacity: 0.9;
     text-shadow: 0 0 5px rgba(228, 201, 255, 0.3);
+    font-weight: bold;
 }
 
 .register-btn {
