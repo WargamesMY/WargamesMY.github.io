@@ -117,9 +117,10 @@ body {
 }
 
 .register-btn:hover {
-    background: #8649CB;
+    background: #413277;
     color: #E4C9FF;
     transform: translateY(-2px);
+    box-shadow: 3px 3px 6px #E4C9FF;
 }
 
 .content-card {
