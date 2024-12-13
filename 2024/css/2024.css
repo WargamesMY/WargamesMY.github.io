@@ -292,8 +292,7 @@ body {
     }
 
     .sponsor-logo {
-        width: 120px;
-        height: 50px;
+	max-width: 250px;
     }
 
     .footer-content {
