@@ -194,8 +194,7 @@ body {
 }
 
 .sponsor-logo {
-    width: 150px;
-    height: 60px;
+    max-width: 250px;
     background: linear-gradient(135deg, rgba(134, 73, 203, 0.2) 0%, rgba(65, 50, 119, 0.2) 100%);
     border-radius: 8px;
     display: flex;
@@ -207,6 +206,7 @@ body {
     transition: all 0.2s ease;
     border: 1px solid rgba(228, 201, 255, 0.1);
     text-shadow: 0 0 5px rgba(228, 201, 255, 0.3);
+    filter:drop-shadow(0 0 3px #fff);
 }
 
 .sponsor-logo:hover {
