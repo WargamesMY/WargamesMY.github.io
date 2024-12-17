@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --font-family-monospace: "Ubuntu Mono", monospace
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000;
+    height: 100dvh;
+    width: 100%;
+    text-align: center;
+}
+
+#chars {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.25;
+    position: absolute;
+    letter-spacing: .5em;
+    overflow-wrap: break-word;
+    line-break: anywhere;
+    word-break: break-all;
+    font-family: var(--font-family-monospace);
+    background: #000;
+    color: rgba(220,210,255,.6);
+    z-index: -1;
+    animation: fade-in 3s;
+    text-align: center;
+}
+
+#chars b {
+    color: rgba(220,210,255,.9);
+    animation: fade-in-half .3s;
+}
+
+#message {
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: .5em;
+    font-family: var(--font-family-monospace);
+    background: #000;
+    color: rgba(220,210,255,.9);
+    display: inline-block;
+    text-align: initial;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+#message.fade-in {
+    opacity: 1;
+}
+
+.error {
+    color: rgba(255,180,180,.9);
+}
+
+.success {
+    color: rgba(220,255,220,.9);
+}
+
+#content {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% - 35px));
+    opacity: 1;
+    backdrop-filter: blur(3px);
+    padding: 35px;
+    transition: all 1s;
+}
+
+#content.sink {
+    transform: translate(-50%, calc(-50% + 35px));
+    opacity: .5;
+}
+
+img {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin-bottom: 30px;
+}
+
+input {
+    width: 236px;
+    padding: 1px 5px;
+    border: 2px solid rgba(120,110,155,.6);
+    display: block;
+    line-height: 2;
+    font-family: var(--font-family-monospace);
+    background-color: rgba(255,255,255,.9);
+}
+
+input:focus {
+    outline: none;
+    border-color: rgba(120,110,155,.9);
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fade-in-half {
+    0% { opacity: .5; }
+    100% { opacity: 1; }
+}
